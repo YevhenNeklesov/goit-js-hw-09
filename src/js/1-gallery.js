@@ -71,7 +71,7 @@ const images = [
 
 const imagesContainer = document.querySelector(".gallery")
 console.log(imagesContainer)
-// const { preview, original, description } = images;
+
 
 const createGallery = images =>
     images
