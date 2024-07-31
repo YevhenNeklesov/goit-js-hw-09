@@ -5,7 +5,7 @@ const KEY = "feedback-form-state";
 
 
 const feedbackForm = document.querySelector(".feedback-form");
-// populateFormFromStorage();
+populateFormFromStorage();
 
 feedbackForm.addEventListener('input', inputsHandler);
 feedbackForm.addEventListener('submit', submitHandler);
@@ -25,7 +25,7 @@ function inputsHandler(event) {
         return;
     }
 
-} 
+}
 
 function submitHandler(event) {
     event.preventDefault();
@@ -50,11 +50,11 @@ function populateFormFromStorage() {
         return;
      }
     
-    if (!dataFromStorage) { 
+    if (!dataFromStorage) {
         return;
     }
 
-    for (const key in dataFromStorage) { 
+    for (const key in dataFromStorage) {
         feedbackForm.elements[key].value = dataFromStorage[key];
     }
  }
